@@ -6,5 +6,5 @@
 - ScrollReveal
 
 ***Developed with Arin Software courses***
-###note:
+### note:
 **Later will change color palette**
