@@ -10,4 +10,4 @@
 **Later will change color palette**
 
 ### For Show
-[click] (https://melodic-daffodil-b3c49c.netlify.app/)
+[click](https://melodic-daffodil-b3c49c.netlify.app/)
