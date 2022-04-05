@@ -13,9 +13,10 @@
 :root {
   --primary-font: "Raleway", sans-serif;
   --secondary-font: "Roboto Condensed", sans-serif;
-  --primary-color: #4e4e4e;
-  --light-color: #eeeeee;
-  --dark-color: #222831;
+  --primary-color: #434c8f;
+  --light-color: #dbd8e3;
+  --dark-color: #000014;
+  --hover-color: #eeee;
   --general-transition: all 0.5s ease;
   --pad-right: 4rem;
   --pad-left: 4rem;
@@ -206,8 +207,8 @@ ul {
   display: block;
   width: 2rem;
   height: 2rem;
-  border-bottom: 1px solid var(--primary-color);
-  border-right: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--light-color);
+  border-right: 1px solid var(--light-color);
   transform: rotate(45deg);
   margin: -1rem;
   animation: arrows-animate 2s infinite;
@@ -238,7 +239,7 @@ ul {
 /* Navigation Menu*/
 
 .nav {
-  background-color: rgba(78, 78, 78, 0.9);
+  background-color: rgba(0, 0, 20, 0.5);
   position: fixed;
   top: 0;
   width: 100%;
@@ -274,7 +275,7 @@ ul {
 
 .nav-link:hover {
   /* üzerine geldiğimizde rengi değiştirir*/
-  color: var(--dark-color);
+  color: var(--hover-color);
 }
 
 .nav-link::after {
@@ -283,7 +284,7 @@ ul {
   height: 0.2rem;
   width: 0;
   opacity: 0;
-  background-color: var(--dark-color);
+  background-color: var(--hover-color);
   transition: var(--general-transition);
 }
 
@@ -308,8 +309,8 @@ ul {
 
 .logo:hover {
   font-size: 2.1rem;
-  color: var(--dark-color);
   transition: var(--general-transition);
+  color: var(--hover-color);
 }
 
 /* NAVBAR TOGGLER*/
@@ -325,7 +326,7 @@ ul {
 .navbar-toggler .line {
   width: 2.5rem;
   height: 0.4rem;
-  background-color: var(--dark-color);
+  background-color: var(--light-color);
   margin: 0.5rem;
   transition: var(--general-transition);
 }
@@ -470,7 +471,7 @@ section#portfolio {
 }
 
 .team-item-overlay {
-  background-color: rgba(78, 78, 78, 0.9);
+  background-color: rgba(0, 0, 20, 0.5);
   position: absolute;
   top: 0;
   left: 0;
@@ -651,6 +652,7 @@ section#contact {
   text-transform: uppercase;
   font-weight: 300;
   margin-bottom: 4rem;
+  color: var(--light-color);
 }
 
 .name,
@@ -659,7 +661,7 @@ section#contact {
   background: none;
   border: none;
   outline: none;
-  border-bottom: 0.1rem solid var(--primary-color);
+  border-bottom: 0.1rem solid var(--light-color);
   min-width: 100%;
   max-width: 100%;
   padding: 2rem 0.5rem;
@@ -668,7 +670,7 @@ section#contact {
 }
 
 ::placeholder {
-  color: var(--primary-color);
+  color: var(--light-color);
 }
 
 /* FOOTER SECTION*/
@@ -792,7 +794,7 @@ ul.social-list li:nth-child(4) a:hover {
     position: absolute;
     top: 7rem;
     left: 0;
-    background-color: var(--primary-color);
+    background-color: rgba(0, 0, 20, 0.5);
     width: 50%;
     height: 100vh;
     opacity: 0.9;
@@ -959,3 +961,12 @@ ul.social-list li:nth-child(4) a:hover {
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px,-8px);
 }
+
+/*
+  COLOR PALETTE
+.color1 {color: #000014;}
+.color2 {color: #19264b;}
+.color3 {color: #434c8f;}
+.color4 {color: #7b77dc;}
+.color5 {color: #c2a6ff;}
+*/
